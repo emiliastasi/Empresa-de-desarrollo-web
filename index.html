@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tu pagina web</title>
-    <link rel="stylesheet"  href="main.css" >
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bellefair&family=Lato:wght@300&display=swap" >
-    <link rel="stylesheet" href="css/all.css" >
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Lato:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/all.css">
 </head>
 <body>
-    <nav class="navegacion">
+    <nav role="navegacion">
         <div id="menuToggle">
             <input type="checkbox" />
             <span></span>
@@ -73,7 +73,7 @@
 
             <div class="contenedor-grid contenedor">
                 <div class="imagen-nosotros columnas2-4">
-                    <img src="img/equipo.jpg" class="efecto-imagen" alt="equipo">
+                    <img src="img/equipo.jpg" class="efecto-imagen">
                 </div>
                 <div class="contenido-nosotros columnas2-4">
                     <h1>Brindamos excelentes servicios</h1>
@@ -162,7 +162,8 @@
         
         <div class="contenedor-grid contenedor">
             <div class="columnas1-3">
-                <a class="portafolio-icono" id="foto-uno"  href="#">
+                <a class="portafolio-icono" 
+                style="background-image: url(/img/portafolio-01.jpg);" href="#">
                 <span class="detalles">
                     <h4>Portafolio 1</h4>
                     <span>Texto Aqui</span>
@@ -171,7 +172,8 @@
             </div>
 
         <div class="columnas1-3">
-            <a class="portafolio-icono" id="foto-dos" href="#">
+            <a class="portafolio-icono" 
+            style="background-image: url(/img/portafolio-02.jpg);" href="#">
             <span class="detalles">
                 <h4>Portafolio 2</h4>
                 <span>Texto Aqui</span>
@@ -179,7 +181,8 @@
         </a>
         </div>
         <div class="columnas1-3">
-            <a class="portafolio-icono" id="foto-tres"  href="#">
+            <a class="portafolio-icono" 
+            style="background-image: url(/img/portafolio-03.jpg);" href="#">
             <span class="detalles">
                 <h4>Portafolio 3</h4>
                 <span>Texto Aqui</span>
@@ -187,7 +190,8 @@
         </a>
         </div>
         <div class="columnas1-3">
-            <a class="portafolio-icono" id="foto-cuatro" href="#">
+            <a class="portafolio-icono" 
+            style="background-image: url(/img/portafolio-04.jpg);" href="#">
             <span class="detalles">
                 <h4>Portafolio 4</h4>
                 <span>Texto Aqui</span>
@@ -195,7 +199,8 @@
         </a>
         </div>
         <div class="columnas1-3">
-            <a class="portafolio-icono" id="foto-cinco" href="#">
+            <a class="portafolio-icono" 
+            style="background-image: url(/img/portafolio-05.jpg);" href="#">
             <span class="detalles">
                 <h4>Portafolio 5</h4>
                 <span>Texto Aqui</span>
@@ -203,7 +208,8 @@
         </a>
         </div>
         <div class="columnas1-3">
-            <a class="portafolio-icono" id="foto-seis" href="#">
+            <a class="portafolio-icono" 
+            style="background-image: url(/img/portafolio-06.jpg);" href="#">
             <span class="detalles">
                 <h4>Portafolio 6</h4>
                 <span>Texto Aqui</span>
@@ -211,7 +217,8 @@
         </a>
         </div>
         <div class="columnas1-3">
-            <a class="portafolio-icono" id="foto-siete" href="#">
+            <a class="portafolio-icono" 
+            style="background-image: url(/img/portafolio-07.jpg);" href="#">
             <span class="detalles">
                 <h4>Portafolio 7</h4>
                 <span>Texto Aqui</span>
@@ -219,7 +226,8 @@
         </a>
         </div>
         <div class="columnas1-3">
-            <a class="portafolio-icono" id="foto-ocho" href="#">
+            <a class="portafolio-icono" 
+            style="background-image: url(/img/portafolio-08.jpg);" href="#">
             <span class="detalles">
                 <h4>Portafolio 8</h4>
                 <span>Texto Aqui</span>
@@ -227,7 +235,8 @@
         </a>
         </div>
         <div class="columnas1-3">
-            <a class="portafolio-icono" id="foto-nueve" href="#">
+            <a class="portafolio-icono" 
+            style="background-image: url(/img/portafolio-09.jpg);" href="#">
             <span class="detalles">
                 <h4>Portafolio 9</h4>
                 <span>Texto Aqui</span>
@@ -312,27 +321,21 @@
 <div class="contenedor-grid contenedor">
     <form  class="reserva-contacto"action="POST">
         <div class="campo">
-            <label for="name">Nombre </label>
-
             <input type="text" name="nombre" placeholder="Nombre"  required>
         </div>
-       
-        <div class="campo"> 
-            <label for="email">Email</label>
+
+        <div class="campo">
             <input type="email" name="email" placeholder="Email"  required>
         </div>
-       
-        <div class="campo">
-            <label for="phone">Telefono</label>
 
+        <div class="campo">
             <input type="tel" name="tel" placeholder="Telefono"  required>
         </div>
 
        <div class="campo">
-           <label for="mensaje"> Mensaje</label>
            <textarea name="mensaje" placeholder="Mensaje"></textarea>
        </div>
-       
+
         <input type="submit" name="enviar" class="button">
 
     </form>
